@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/login.css">
+  <title>Title</title>
+</head>
+<body>
+<main id="container" class="login_container" layout:fragment="content">
+  <section class="contents">
+    <div class="inner">
+      <div class="login">
+        <h2>로그인</h2>
+        <form>
+          <fieldset>
+            <legend>로그인</legend>
+            <div class="input_wrap">
+              <input type="text" placeholder="아이디" title="아이디" maxlength="41">
+              <button type="button" class="delete_btn">
+                <span class="blind">삭제</span>
+              </button>
+            </div>
+            <div class="input_wrap input_wrap2">
+              <input type="password" placeholder="비밀번호" title="비밀번호" maxlength="16">
+              <button type="button" class="delete_btn">
+                <span class="blind">삭제</span>
+              </button>
+            </div>
+            <div class="input_wrap3">
+              <label class="checkbox">
+                <input type="checkbox" class="blind">
+                로그인 상태 유지
+              </label>
+            </div>
+            <button type="submit" class="login_btn">로그인</button>
+          </fieldset>
+        </form>
+      </div>
+      <ul class="find">
+        <li><a href="/login/memberjoin.html">회원가입</a></li>
+        <li><a href="#">로그인 정보 찾기</a></li>
+        `   </ul>
+      <div class="s_login">
+        <h3>소셜미디어 계정으로 로그인</h3>
+        <a href="#" class="kakao_btn">카카오 계정으로 로그인</a>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

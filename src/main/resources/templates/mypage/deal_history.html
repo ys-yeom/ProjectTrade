@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/mypage/deal_history.css">
+  <script src="/js/deal_history.js>"></script>
+  <title>Title</title>
+</head>
+<body>
+<main id="container" class="deal_container" layout:fragment="content">
+  <section class="deal_ktgorie">
+    <div class="inner">
+      <div class="deal_wrap">
+        <a class="sale" href="/mypage/deal_history.html">판매내역</a>
+        <span></span>
+        <a class="order" href="/mypage/buying_history.html">구매내역</a>
+      </div>
+      <ul>
+        <li class="on">
+          <a href="#">전체</a>
+        </li>
+        <li>
+          <a href="#">구매완료</a>
+        </li>
+        <li>
+          <a href="#">취소/환불</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="deal_search">
+    <div class="inner">
+      <div class="search_wrap">
+        <form>
+          <fieldset>
+            <legend>게시물 검색</legend>
+            <div class="search">
+              <div class="input_wrap">
+                <button type="submit" class="search_btn">
+                  <span class="blind">게시물 검색</span>
+                </button>
+                <input type="search" placeholder="상품명으로 검색해주세요." title="상품명으로 검색해주세요.">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="main_deal">
+    <div class="inner">
+      <div class="history_wrap">
+        <h3>2025년 09월 11일</h3>
+        <div class="deal">
+          <div class="cancel_wrap">
+            <p class="cancel">거래 취소 완료</p>
+            <img src="/images/common/angle-left.png" alt="이미지">
+          </div>
+          <a class="detail" href="/mypage/deal_complete.html">
+            <img src="/images/trade/trade_images01.webp" alt="이미지">
+            <div class="txt_wrap">
+              <h4>3,000원</h4>
+              <p class="name">귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</p>
+              <p class="user">Iamam / 택배거래</p>
+            </div>
+          </a>
+          <a class="btn_wrap" href="/order/review.html">
+            <button type="button">후기남기기</button>
+          </a>
+        </div>
+      </div>
+      <div class="history_wrap">
+        <h3>2025년 09월 09일</h3>
+        <div class="deal">
+          <div class="cancel_wrap">
+            <p class="cancel">거래 완료</p>
+            <img src="/images/common/angle-left.png" alt="이미지">
+          </div>
+          <a class="detail" href="/mypage/deal_complete.html">
+            <img src="/images/trade/trade_images02.webp" alt="이미지">
+            <div class="txt_wrap">
+              <h4>480,000원</h4>
+              <p class="name">아이폰 14 256GB 화이트 A급</p>
+              <p class="user">Iamam / 택배거래</p>
+            </div>
+          </a>
+          <a class="btn_wrap" href="/order/review.html">
+            <button type="button">후기남기기</button>
+          </a>
+        </div>
+      </div>
+      <div class="history_wrap">
+        <h3>2025년 09월 07일</h3>
+        <div class="deal">
+          <div class="cancel_wrap">
+            <p class="cancel">거래 완료</p>
+            <img src="/images/common/angle-left.png" alt="이미지">
+          </div>
+          <a class="detail" href="/mypage/deal_complete.html">
+            <img src="/images/trade/trade_images03.webp" alt="이미지">
+            <div class="txt_wrap">
+              <h4>100,000원</h4>
+              <p class="name">무아스 스팀 다리미기 새상품</p>
+              <p class="user">Iamam / 택배거래</p>
+            </div>
+          </a>
+          <a class="btn_wrap" href="/order/review.html">
+            <button type="button">후기남기기</button>
+          </a>
+        </div>
+      </div>
+      <div class="history_wrap">
+        <h3>2025년 09월 11일</h3>
+        <div class="deal">
+          <div class="cancel_wrap">
+            <p class="cancel">거래 취소 완료</p>
+            <img src="/images/common/angle-left.png" alt="이미지">
+          </div>
+          <a class="detail" href="/mypage/deal_complete.html">
+            <img src="/images/trade/trade_images01.webp" alt="이미지">
+            <div class="txt_wrap">
+              <h4>3,000원</h4>
+              <p class="name">귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</p>
+              <p class="user">Iamam / 택배거래</p>
+            </div>
+          </a>
+          <a class="btn_wrap" href="/order/review.html">
+            <button type="button">후기남기기</button>
+          </a>
+        </div>
+      </div>
+      <div class="history_wrap">
+        <h3>2025년 09월 09일</h3>
+        <div class="deal">
+          <div class="cancel_wrap">
+            <p class="cancel">거래 완료</p>
+            <img src="/images/common/angle-left.png" alt="이미지">
+          </div>
+          <a class="detail" href="/mypage/deal_complete.html">
+            <img src="/images/trade/trade_images02.webp" alt="이미지">
+            <div class="txt_wrap">
+              <h4>480,000원</h4>
+              <p class="name">아이폰 14 256GB 화이트 A급</p>
+              <p class="user">Iamam / 택배거래</p>
+            </div>
+          </a>
+          <a class="btn_wrap" href="/order/review.html">
+            <button type="button">후기남기기</button>
+          </a>
+        </div>
+      </div>
+      <div class="history_wrap">
+        <h3>2025년 09월 07일</h3>
+        <div class="deal">
+          <div class="cancel_wrap">
+            <p class="cancel">거래 완료</p>
+            <img src="/images/common/angle-left.png" alt="이미지">
+          </div>
+          <a class="detail" href="/mypage/deal_complete.html">
+            <img src="/images/trade/trade_images03.webp" alt="이미지">
+            <div class="txt_wrap">
+              <h4>100,000원</h4>
+              <p class="name">무아스 스팀 다리미기 새상품</p>
+              <p class="user">Iamam / 택배거래</p>
+            </div>
+          </a>
+          <a class="btn_wrap" href="/order/review.html">
+            <button type="button">후기남기기</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

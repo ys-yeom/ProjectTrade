@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/order/address_search.css">
+    <script src="/js/address.js>"></script>
+    <title>Title</title>
+</head>
+<body>
+<main id="container" layout:fragment="content">
+    <section class="address_p">
+        <div class="inner">
+            <div class="a_back_wrap">
+                <a href="/order/order_b.html" class="a_back_btn"></a>
+                <p class="a_add">주소 찾기</p>
+            </div>
+        </div>
+    </section>
+    <section class="address_find">
+        <div class="inner">
+            <div class="find_wrap">
+                <input type="search" placeholder="주소를 입력해주세요">
+                <button type="button" class="delete_btn">
+                    <span class="blind">삭제</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="address_ex">
+        <div class="inner">
+            <div class="ex_wrap">
+                <strong>주소 입력 예시</strong>
+                <ul>
+                    <li>도로명+건물번호 : 서초대로38길 12</li>
+                    <li>동/읍/면/리+번지 : 서초동 1498-5</li>
+                    <li>건물명, 아파트명 : 서초동 마제스타시티</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

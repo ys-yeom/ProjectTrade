@@ -1,0 +1,188 @@
+.deal_container .inner {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 400px;
+}
+
+/* 구매/판매내역 */
+.deal_ktgorie {
+    padding-top: 50px;
+}
+.deal_ktgorie .deal_wrap {
+    display: flex;
+    align-items: center;
+}
+.deal_ktgorie .sale, .deal_ktgorie .buying {
+    color: #376ec1;
+    font-weight: bold;
+    font-size: 16px;
+}
+.deal_ktgorie .order, .deal_ktgorie .deal{
+    color: #666;
+    font-size: 16px;
+}
+
+
+.deal_ktgorie span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 12px;
+    background: #7f7f7f;
+    margin: 0 20px;
+}
+
+.deal_ktgorie ul {
+    display: flex;
+    align-items: center;
+}
+.deal_ktgorie ul > li {
+    margin: 25px 10px 0 0;
+}
+.deal_ktgorie ul > li > a {
+    display: block;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 18px;
+    background-color: #f3f3f3;
+}
+.deal_ktgorie li.on a {
+    color: #fff;
+    background-color: #376ec1;
+}
+
+
+/* 상품 검색 */
+.deal_search .search_wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+.deal_search .search {
+    display: flex;
+    justify-content: center;
+    gap: 0 10px;
+}
+
+.deal_search .search .input_wrap {
+    max-width: 730px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    border: 2px solid #376ec1;
+    align-items: center;
+}
+.deal_search .search input[type=search] {
+    width: calc(100% - 60px);
+    font-size: 16px;
+    height: 50px;
+    border: none;
+}
+.deal_search .search .search_btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: #fff url(/images/common/search.png) no-repeat 0 0 / 100%;
+}
+
+/* 거래내역 */
+.main_deal {
+    padding-top: 25px;
+}
+
+.main_deal .history_wrap {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.main_deal .history_wrap h3 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.main_deal .deal {
+    padding-top:10px;
+}
+.main_deal .cancel_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.main_deal .cancel_wrap .cancel {
+    font-weight: bold;
+}
+.main_deal .cancel_wrap img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+}
+
+.main_deal .detail {
+    display: flex;
+    padding: 15px 0;
+    gap: 20px;
+    align-items: center;
+}
+.main_deal .detail img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.main_deal .deal .txt_wrap {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 3px;
+}
+.main_deal .detail .txt_wrap h4 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+
+.main_deal .btn_wrap {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    background: #dfebff;
+    align-items: center;
+    padding: 10px 20px;
+    flex: 1 1 0%;
+    text-align: center;
+    display: flex;
+}
+
+.main_deal .btn_wrap button {
+    align-items: center;
+    text-align: center;
+    border: none;
+    background: none;
+    color: #376ec1;
+    font-weight: bold;
+    width: 700px;
+    height: 20px;
+}
+
+
+
+
+
+/* 태블릿 */
+@media (max-width:1200px) {
+    .deal_container .inner {
+        padding: 0 300px;
+    }
+
+    .main_deal {
+        padding-bottom: 50px;
+    }
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+    .deal_container .inner {
+        padding: 0 150px;
+    }
+}

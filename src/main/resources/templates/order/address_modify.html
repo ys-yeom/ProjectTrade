@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/order/address_modify.css">
+    <script src="/js/address.js>"></script>
+    <title>Title</title>
+</head>
+<body>
+<main id="container" layout:fragment="content">
+    <section class="address_p">
+        <div class="inner">
+            <div class="a_back_wrap">
+                <a href="/order/order_b.html" class="a_back_btn"></a>
+                <p class="a_add">주소 수정</p>
+            </div>
+        </div>
+    </section>
+    <form>
+        <section class="address_main">
+            <div class="inner">
+                <form>
+                    <div class="way_wrap">
+                        <input type="text" id="name" name="name" maxlength="20" placeholder=" " required>
+                        <label for="name">이름</label>
+                        <button type="button" class="delete_btn">
+                            <span class="blind">삭제</span>
+                        </button>
+                    </div>
+                    <div class="way_wrap">
+                        <input type="tel" id="mobile" name="mobile" maxlength="11" placeholder=" " oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+                        <label for="mobile">휴대전화</label>
+                        <button type="button" class="delete_btn">
+                            <span class="blind">삭제</span>
+                        </button>
+                    </div>
+                    <div class="way_wrap">
+                        <input type="text" id="address" name="address" placeholder=" " required>
+                        <label for="address">주소</label>
+                        <button type="button" class="delete_btn">
+                            <span class="blind">삭제</span>
+                        </button>
+                    </div>
+                    <div class="way_wrap">
+                        <input type="text" id="detail" name="detail" maxlength="40" placeholder=" " required>
+                        <label for="detail">상세주소</label>
+                        <button type="button" class="delete_btn">
+                            <span class="blind">삭제</span>
+                        </button>
+                    </div>
+
+                    <button class="done" type="submit">완료</button>
+                </form>
+
+            </div>
+        </section>
+    </form>
+</main>
+</body>
+</html>

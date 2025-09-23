@@ -1,0 +1,126 @@
+.complete_container .inner {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 400px;
+}
+
+/* 메인 거래 */
+.main_complete {
+    padding-top: 20px;
+    background-color: #fff;
+}
+.main_complete a img {
+    width: 20px;
+    height: 20px;
+}
+.main_complete h2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 25px 0;
+}
+.main_complete .history_wrap {
+    border-bottom: 1px solid #f6f6f6;
+    padding-bottom: 20px;
+}
+.main_complete .detail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.main_complete .detail img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.main_complete .detail .price {
+    display: flex;
+    gap: 7px;
+}
+.main_complete .detail .txt_wrap p {
+    color: #9a9a9a;
+}
+
+.main_complete .user {
+    padding: 20px 0;
+}
+.main_complete .user a {
+    text-decoration: underline;
+}
+
+.main_complete .btn_wrap {
+    border: none;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.main_complete .btn_wrap button {
+    align-items: center;
+    color: #376ec1;
+    font-weight: bold;
+    font-size: 15px;
+    width: 726px;
+    height: 40px;
+    background: #dfebff;
+    border: none;
+    border-radius: 10px;
+}
+
+/* 후기 */
+.main_review {
+    padding: 20px 0;
+    border-bottom: 1px solid #f6f6f6;
+}
+.main_review h3 {
+    font-size: 20px;
+    color: #000;
+}
+.main_review p {
+    padding: 10px 0;
+    color: #bfbfbf;
+}
+
+/* 배송 */
+.address_infor {
+    padding: 20px 0;
+    border-bottom: 1px solid #f6f6f6;
+}
+.address_infor h3 {
+    font-size: 20px;
+    color: #000;
+}
+.address_infor p {
+    padding: 10px 0;
+    color: #bfbfbf;
+}
+
+/* 후기남기기 */
+.address_infor .btn_wrap {
+    display: flex;
+    padding: 20px 0 0 0;
+    
+}
+.address_infor button {
+    width: 726px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background: #376ec1;
+    border: none;
+}
+
+/* 태블릿 */
+@media (max-width:1200px) {
+    .complete_container .inner {
+        padding: 0 300px;
+    }
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+    .complete_container .inner {
+        padding: 0 150px;
+    }
+}

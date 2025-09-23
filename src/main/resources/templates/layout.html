@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>중고거래</title>
+    <th:block th:replace="~{common/config :: config}" />
+</head>
+<body>
+    <div id="skip_navi">
+        <a href="#container">본문바로가기</a>
+    </div>
+
+    <th:block th:replace="~{common/header :: header}"></th:block>
+
+    <th:block layout:fragment="content"></th:block>
+
+    <th:block th:replace="~{common/footer :: footer}"></th:block>
+</body>
+</html>

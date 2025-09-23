@@ -1,0 +1,176 @@
+.order_p .inner {
+  margin: 0 auto;
+  padding: 0 170px 0;
+  max-width: 1200px;
+}
+.back_wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  z-index: 3;
+}
+.back_wrap .back_btn {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 40px;
+  top: 1px;
+  background: url(/images/common/angle-left.png) no-repeat 100% / 100%;
+}
+
+.deal .inner {
+  margin: 0 auto;
+  padding: 0 170px 0;
+  max-width: 1200px;
+}
+.d_wrap {
+  position: relative;
+  padding: 10px;
+  display: flex;
+}
+.d_img_wrap{
+  position: relative;
+  display: flex;
+  padding: 0 20px;
+  gap: 20px;
+}
+.d_img_wrap img {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+.d_txt_wrap span {
+  position: relative;
+  font-weight: 700;
+  font-size: 20px;
+  top: 6px;
+}
+.d_txt_wrap p {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: #8c8c8c;
+  top: 13px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #00000021;
+  background-clip: content-box;
+  border: none;
+  margin: 10px 0px 20px;
+  padding: 0px;
+}
+
+.deal_p .inner {
+  margin: 0 auto;
+  padding: 0 170px 300px;
+  max-width: 1200px;
+}
+.deal_p .h_txt {
+  position: relative;
+  padding: 0 20px;
+}
+.h_txt h4 {
+  font-size: 18px;
+  color: #000;
+}
+.deal_p .sdeil_wrap {
+  position: relative;
+  display: flex;
+  margin: 20px ;
+  padding: 20px;
+  border: 1.5px solid #00000038;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: all 0.3;
+}
+.deal_p .sdeil_wrap:hover {
+  background: #376ec150;
+}
+.deal_p .deil_wrap {
+  position: relative;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  border: 1.5px solid #00000038;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: all 0.3;
+}
+.deal_p .deil_wrap:hover {
+  background: #376ec150;
+}
+.selected {
+      border-color: #007BFF;
+      background-color: #E0F0FF;
+  }
+
+.deal_f .inner {
+  margin: 0 auto;
+  padding: 0 170px 20px;
+  max-width: 1200px;
+}
+.deal_f .p_wrap {
+  position: relative;
+  padding: 20px;
+  display: flex;                 /* 가로 배치 */
+  align-items: center;           /* 세로 정렬 */
+  justify-content: space-between;/* 양쪽 끝으로 */
+}
+.price_box {
+  gap: 6px;      /* 예상금액과 금액 사이 간격 */
+  align-items: center;
+}
+.price_box p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+.price_box span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.p_wrap .next_btn {
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+  background: rgb(216, 12, 24);
+  cursor: pointer;
+}
+.p_wrap .next_btn:hover {
+  color: #00000098;
+  background: rgb(216, 12, 26, 0.683)
+}
+
+
+
+/* 태블릿 */
+@media (max-width:1200px) {
+  
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+  .d_txt_wrap span {  
+    font-size: 18px;
+  }
+  .d_txt_wrap p {
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+.h_txt h4{
+  font-size: 16px;
+}
+}
