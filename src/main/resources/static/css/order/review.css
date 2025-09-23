@@ -1,219 +1,105 @@
-.store_header .inner {
-  margin: 0 auto;
-  padding: 0 170px 0;
-  max-width: 1200px;
-}
-.store_header .store_htxt {
-    text-align: start;
-    font-weight: 700;
-    font-size: 18px;
-    margin: 30px 0;
+.review_container .inner {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 400px;
 }
 
-.store_my .inner {
-  margin: 0 auto;
-  padding: 0 170px 0;
-  max-width: 1200px;
+.main_review {
+    padding: 20px 0;
 }
-.sr_name_wrap {
-  position: relative;
-  padding: 25px;
-  border: 1px solid #00000045;
+.main_review a img {
+    width: 20px;
+    height: 20px;
 }
-.sname_wrap {
-  position: relative;
-  display: flex;
-  gap: 10px;
-  margin-bottom: 80px;
+.main_review h2 {
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.sname_wrap .sname {
-  font-size: 22px;
-  font-weight: 500;
+.main_review .image {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #f6f6f6;
 }
-.sname_wrap .rename_btn {
-  position: relative;
-    line-height: 20px;
+.main_review .image ul {
+    display: flex;
+    width: 856px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.main_review .image li::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url(/images/product_image_before.svg) center center no-repeat;
+    margin-bottom: 16px;
+}
+.main_review .image li {
+    position: relative;
+    width: 202px;
+    height: 202px;
+    border-radius: 2px;
+    border: 1px solid #b2b2b2;
+    background: #fafafa;
     display: flex;
     align-items: center;
-    padding: 0px 5px;
-    color: rgb(136, 136, 136);
-    border: 1px solid rgba(101, 97, 97, 0.5);
-    font-size: 12px;
-    background: none;
-    border-radius: 5px;
+    justify-content: center;
+    flex-direction: column;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
 }
-.sales_history {
-  position: relative;
-  display: inline-flex;
-  padding: 10px;
-  text-align: end;
-  justify-content: flex-end;
-  font-size: 16px;
-  font-weight: 500;
-  border: 1px solid #00000045;
+.main_review .image input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
 }
-.snameInput {
-  border: 1px solid #0000003d;
-  padding: 5px;
-  height: 36px;
+.main_review .review_wrap {
+    padding-bottom: 20px;
 }
-.saveBtn {
-  background: #376ec13b;
-  border: 1px solid #0000003d;
-  color: #787474;
-  padding: 4px;
-  height: 36px;
+.main_review .review_wrap textarea {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    font-size: 16px;
 }
-.store_let .inner {
-  margin: 0 auto;
-  padding: 0 170px 0;
-  max-width: 1200px;
-}
-.store_a_wrap {
-  position: relative;
-  display: flex;
-  margin-top: 30px;
-  height: 50px;
-}
-.store_a_wrap .review_r {
-  border-left: 1px solid rgb(33, 33, 33);
-  flex: 1 1 0%;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  display: flex;
-  border-top: 1px solid rgb(33, 33, 33);
-  border-right: 1px solid rgb(33, 33, 33);
-  border-bottom: 1px solid rgb(255, 255, 255);
-  background: rgb(255, 255, 255);
-  color: rgb(33, 33, 33);
-  font-weight: 600;
-}
-.store_a_wrap .review_o {
-  flex: 1 1 0%;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  display: flex;
-  border-top: 1px solid rgb(238, 238, 238);
-  border-right: 1px solid rgb(238, 238, 238);
-  border-bottom: 1px solid rgb(33, 33, 33);
-  background: rgb(250, 250, 250);
-  color: rgb(136, 136, 136);
+.main_review .review_wrap span {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
 }
 
-.store_re {
-  position: relative;
-  display: flex;
-  margin-top: 20px;
-  gap: 10px;
-}
-.store_re .re_htext {
-  font-size: 20px;
-  font-weight: 500;
-}
-.store_re .review_re_count {
-  font-size: 20px;
-  font-weight: 500;
+.main_review .btn_wrap {
+    display: flex;
+    padding: 20px 0 0 0;
 }
 
-.reviewAll_wrap .all_review {
-  gap: 15px;
-  margin-top: 20px;
+.main_review button {
+    width: 726px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background: #376ec1;
+    border: none;
 }
-.reviewAll_wrap .all_review li {
-  position: relative;
-  margin-bottom: 20px;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  border: 1px solid #eeeeee;
-  transition: box-shadow 0.2s;
-}
-.reviewAll_wrap .all_review li:hover .img_wrap::after {
-  opacity: 0;
-}
-.store_review {
-  display: flex;
-}
-.store_review .img_wrap {
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-left: 20px;
-}
-.store_review .img_wrap img {
-  width: 50px;
-  max-width: 50px;
-  height: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.543);
-  border-radius: 50%;
-  object-fit: cover;
-  padding: 5px;
-}
-
-
-.store_review .txt_wrap {
-  background: #ffff;
-  height: 80px;
-  padding: 15px 15px 0;
-  flex-direction: column;
-}
-.store_review .txt_wrap strong{
-  border: 1px solid rgba(0, 0, 0, 0.543);
-  display: block;
-  color: #212121;
-  font-size: 14px;
-  margin-bottom: 15px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 5px 22px;
-}
-
-.store_review .txt_wrap strong:hover {
-  background: #00000045;
-}
-.store_review .txt_wrap span{
-  font-size: 14px;
-  font-weight: bold;
-}
-
-
-
-
-
-
-
 
 /* 태블릿 */
 @media (max-width:1200px) {
-  
+    .review_container .inner {
+        padding: 0 300px;
+    }
 }
 
 /* 모바일 */
 @media (max-width:767px) {
-  .sname_wrap .sname {
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .sales_history {
-    font-size: 14px;
-    padding: 7px;
-  }
-  .store_re .re_htext {
-    font-size: 18px;
-  }
-.store_re .review_re_count {
-    font-size: 18px;
-  }
-  .store_review .txt_wrap strong {
-    font-size: 13px;
-  }
-  .store_review .txt_wrap span {
-    font-size: 13px;
-  }
+    .review_container .inner {
+        padding: 0 150px;
+    }
 }
