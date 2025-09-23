@@ -18,6 +18,8 @@ public class MainController {
         return "login/login";
     }
 
+
+
     @GetMapping("/memberjoin")
     public String MemberjoinPage() {
         return "/login/memberjoin";
