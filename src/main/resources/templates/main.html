@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<main id="container" class="main_container" layout:fragment="content">
+  <section class="main_visual">
+    <h2 class="blind">메인비주얼</h2>
+    <img class="main_v">
+  </section>
+  <section class="main_search">
+    <h2 class="blind">메인검색</h2>
+    <div class="inner">
+      <div class="search_wrap">
+        <form>
+          <fieldset>
+            <legend>게시물 검색</legend>
+            <div class="search">
+              <div class="input_wrap">
+                <input type="search" placeholder="검색어를 입력해주세요" title="검색어를 입력해주세요">
+                <button type="submit" class="search_btn">
+                  <span class="blind">게시물 검색</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="main_Kategorie">
+    <div class="inner">
+      <ul class="Kategorie_wrap">
+        <li>
+          <a href="/trade/trade.html">
+            <img class="pc" src="/images/pc_icon.png" alt="">
+            디지털기기
+          </a>
+        </li>
+        <li>
+          <a href="/trade/trade.html">
+            <img class="gagu" src="/images/gagu_icon.png" alt="">
+            가구/인테리어
+          </a>
+        </li>
+        <li>
+          <a href="/trade/trade.html">
+            <img class="kitchen" src="/images/kitchen_icon.png" alt="">
+            생활/주방
+          </a>
+        </li>
+        <li>
+          <a href="/trade/trade.html">
+            <img class="clothes" src="/images/clothes_icon.png" alt="">
+            의류
+          </a>
+        </li>
+        <li>
+          <a href="/trade/trade.html">
+            <img class="beauty" src="/images/beauty_icon.png" alt="">
+            뷰티/미용
+          </a>
+        </li>
+        <li>
+          <a href="/trade/trade.html">
+            <img class="sports" src="/images/sports_icon.png" alt="">
+            스포츠/레저
+          </a>
+        </li>
+        <li>
+          <a href="/trade/trade.html">
+            <img class="game" src="/images/game_icon.png" alt="">
+            게임/음반
+          </a>
+        </li>
+        <li>
+          <a href="/trade/trade.html">
+            <img class="book" src="/images/book_icon.png" alt="">
+            도서
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/menu/enroll.css">
+  <script src="/js/enroll.js>"></script>
+  <title>Title</title>
+</head>
+<body>
+<main id="container" class="enroll_container" layout:fragment="content">
+  <section class="en_ktgorie">
+    <div class="inner">
+      <div class="txt_wrap">
+        <a class="enroll" href="enroll.html">상품 등록</a>
+        <span></span>
+        <a class="deal" href="deal_history.html">구매/판매 내역</a>
+      </div>
+    </div>
+  </section>
+  <section class="main_enroll">
+    <div class="inner">
+      <h2>상품정보</h2>
+      <div class="image">
+        <p class="enroll_p">상품 이미지 <span class="enroll_span">(0/12)</span></p>
+        <div class="image_enroll">
+          <ul>
+            <li>이미지 등록<input type="file" accept="image/jpg, image/jpeg, image/png" multiple=""></li>
+          </ul>
+          <span class="image_span">상품 이미지는 PC에서는 1:1, 모바일에서는 1:1.23 비율로 보여져요.</span>
+        </div>
+      </div>
+      <div class="name">
+        <p class="enroll_p">상품명</p>
+        <div class="name_input">
+          <input type="text" placeholder="상품명을 입력해 주세요.">
+          <span>0/40</span>
+        </div>
+      </div>
+      <div class="category">
+        <p class="enroll_p">카테고리</p>
+        <div class="all">
+          <div class="enroll_cata">
+            <ul>
+              <li><button type="button">디지털기기</button></li>
+              <li><button type="button">가구/인테리어</button></li>
+              <li><button type="button">생활/주방</button></li>
+              <li><button type="button">의류</button></li>
+              <li><button type="button">뷰티/미용</button></li>
+              <li><button type="button">스포츠/레저</button></li>
+              <li><button type="button">게임/음반</button></li>
+              <li><button type="button">도서</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="state">
+        <p class="enroll_p">상태</p>
+        <div class="state_label">
+          <div class="label">
+            <input type="radio" id="state1" name="state" value="새 상품 (미사용)">
+            <label class="radio" for="state1">새 상품 (미사용)<span>사용하지 않은 새 상품</span></label>
+          </div>
+          <div class="label">
+            <input type="radio" id="state2" name="state" value="사용감 없음">
+            <label class="radio" for="state2">사용감 없음<span>사용은 했지만 눈에 띄는 흔적이나 얼룩이 없음</span></label>
+          </div>
+          <div class="label">
+            <input type="radio" id="state3" name="state" value="사용감 적음">
+            <label class="radio" for="state3">사용감 적음<span>눈에 띄는 흔적이나 얼룩이 약간 있음</span></label>
+          </div>
+          <div class="label">
+            <input type="radio" id="state4" name="state" value="사용감 많음">
+            <label class="radio" for="state4">사용감 많음<span>눈에 띄는 흔적이나 얼룩이 많이 있음</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="explain">
+        <p class="enroll_p">설명</p>
+        <div class="text_wrap">
+          <textarea rows="6" placeholder="브랜드, 모델명, 구매 시기, 하자 유무 등 상품 설명을 최대한 자세히 적어주세요. &#13;&#10; 전화번호, SNS 계정 등 개인정보 입력은 제한될 수 있어요."></textarea>
+          <span>0/2000</span>
+        </div>
+      </div>
+      <div class="tag">
+        <p class="enroll_p">태그</p>
+        <div class="tag_wrap">
+          <input type="text" placeholder="태그를 입력해 주세요. (최대 5개)">
+          <ul>
+            <li><p>태그는 띄어쓰기로 구분되며 최대 9자까지 입력할 수 있어요.</p></li>
+            <li><p>내 상품을 다양한 태그로 표현해 보세요.</p></li>
+            <li><p>사람들이 내 상품을 더 잘 찾을 수 있어요.</p></li>
+            <li><p>상품과 관련 없는 태그를 입력할 경우, 판매에 제재를 받을 수 있어요.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="price">
+        <p class="enroll_p">가격</p>
+        <div class="price_wrap">
+          <input type="text" autocomplete="off" placeholder="가격을 입력해 주세요.">
+          <span>원</span>
+        </div>
+      </div>
+  </section>
+  <section class="main_add">
+    <div class="inner">
+      <h2>추가정보</h2>
+      <div class="parcel">
+        <p class="enroll_p">배송비</p>
+        <div class="parcel_wrap">
+          <input type="text" autocomplete="off" placeholder="가격을 입력해 주세요.">
+          <span>원</span>
+        </div>
+      </div>
+      <div class="deil">
+        <p class="enroll_p">직거래</p>
+        <div>
+          <input type="radio" id="deil1" name="deil" value="가능">
+          <label class="radio" for="deil1">가능</label>
+          <input class="deil_radio" type="radio" id="deil2" name="deil" value="불가" checked>
+          <label class="radio" for="deil2">불가</label>
+        </div>
+      </div>
+      <div class="amount">
+        <p class="enroll_p">수량</p>
+        <div class="amount_info">
+          <input type="text" placeholder="숫자만 입력해 주세요.">
+          <span>개</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main_btn">
+    <div class="inner">
+      <div class="btn_wrap">
+        <button type="button">등록하기</button>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

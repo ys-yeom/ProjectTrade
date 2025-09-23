@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/order/address_select.css">
+    <script src="/js/address.js>"></script>
+    <title>Title</title>
+</head>
+<body>
+<main id="container" layout:fragment="content">
+    <section class="address_p">
+        <div class="inner">
+            <div class="ab_wrap">
+                <div class="a_back_wrap">
+                    <a href="/order/order_b.html" class="a_back_btn"></a>
+                    <p class="a_add">주소 선택</p>
+                </div>
+                <div class="add_wrap">
+                    <a href="/order/address.html" class="add_a">주소 추가</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ars_main">
+        <div class="inner">
+            <div class="ars_infor">
+                <div class="ars_member">
+                    <p class="ars_name">홍길동</p>
+                    <p class="ars_add">서울특별시 종로구 통일로</p>
+                    <span class="ars_num">010 - 1111 - 2222</span>
+                </div>
+                <div class="ars_bottom">
+                    <div class="bottom_wrap">
+                        <a class="re_btn" href="/order/address_modify.html">
+                            수정
+                        </a>
+                        <div class="delete_we">삭제</div>
+                    </div>
+                    <a class="choice_wrap" href="/order/address_search.html">선택</a>
+                </div>
+            </div>
+            <div class="ars_infor">
+                <div class="ars_member">
+                    <p class="ars_name">홍길동</p>
+                    <p class="ars_add">서울특별시 종로구 통일로</p>
+                    <span class="ars_num">010 - 1111 - 2222</span>
+                </div>
+                <div class="ars_bottom">
+                    <div class="bottom_wrap">
+                        <a class="re_btn" href="/order/address_modify.html">
+                            수정
+                        </a>
+                        <div class="delete_we">삭제</div>
+                    </div>
+                    <a class="choice_wrap" href="/order/address_search.html">선택</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

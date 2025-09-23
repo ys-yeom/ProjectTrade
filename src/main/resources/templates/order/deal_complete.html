@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/order/deal_complete.css">
+  <title>Title</title>
+</head>
+<body>
+<main id="container" class="complete_container" layout:fragment="content">
+  <section class="main_complete">
+    <div class="inner">
+      <a href="/mypage/deal_history.html">
+        <img src="/images/common/angle-left.png" alt="이미지">
+      </a>
+      <h2>거래가 완료되었습니다.</h2>
+      <div class="history_wrap">
+        <div class="deal">
+          <a class="detail" href="/order/deal_complete.html">
+            <img src="/images/trade/trade_images02.webp" alt="이미지">
+            <div class="txt_wrap">
+              <div class="price">
+                <h4>480,000원</h4>
+                <span>무료배송</span>
+              </div>
+              <p>아이폰 14 256GB 화이트 A급</p>
+            </div>
+          </a>
+          <p class="user">구매자 : <a href="#">Iamam</a></p>
+          <a class="btn_wrap" href="/menu/talk.html">
+            <button type="button">구매자와 채팅</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main_review">
+    <div class="inner">
+      <h3>후기</h3>
+      <p>거래는 어떠셨나요?<br>
+        좋았던 점이 있다면 후기로 남겨주세요.</p>
+    </div>
+  </section>
+  <section class="address_infor">
+    <div class="inner">
+      <h3>배송정보</h3>
+      <p>363512317830<br>
+        GS25편의점택배</p>
+      <a class="btn_wrap" href="/order/review.html">
+        <button type="button">후기 작성</button>
+      </a>
+    </div>
+  </section>
+</main>
+</body>
+</html>

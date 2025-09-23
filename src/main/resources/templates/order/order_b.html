@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/order/order_b.css">
+    <title>Title</title>
+</head>
+<body>
+<main id="container" layout:fragment="content">
+    <form id="payment">
+        <section class="order_dt">
+            <div class="inner">
+                <div class="h_txt">
+                    주문하기
+                </div>
+                <div class="en_wrap">
+                    <p>거래방법</p>
+                    <span>일반택배 (선불)</span>
+                </div>
+
+            </div>
+        </section>
+        <section class="address_infor">
+            <div class="inner">
+                <div class="address_htxt">
+                    배송지
+                </div>
+                <div class="member_infor_wrap">
+                    <div class="member">
+                        <p class="meq">배송지를 등록해 주세요</p>
+                        <!-- <p class="mb_name">홍길동</p>
+                        <p class="mb_add">서울특별시 종로구 통일로</p>
+                        <span class="mb_num">010 - 1111 - 2222</span> -->
+                    </div>
+                    <a href="/order/address.html" class="reg">
+                        등록
+                    </a>
+                    <!-- <a href="address.html" class="change">
+                        변경
+                    </a> -->
+                </div>
+                <div class="request_wrap">
+                    <p class="req">판매분께 전달할 요청사항을 적어주세요</p>
+                    <div class="memo_wrap">
+                        <input type="text" id="memo" name="memo" placeholder="ex ) 포장 꼼꼼하게 부탁드려요">
+                    </div>
+                </div>
+                <hr class="line">
+            </div>
+        </section>
+        <section class="order_prod_de">
+            <div class="inner">
+                <div class="de_htxt">
+                    <p>주문상품</p>
+                </div>
+                <div class="de_wrap">
+                    <div class="de_img_wrap">
+                        <img src="/images/trade/trade_images03.webp">
+                    </div>
+                    <div class="de_txt_wrap">
+                        <span>3,000원</span>
+                        <p>귀국 정리! 4단 슬림 수납 선반</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="k_pay">
+            <div class="inner">
+                <div class="pay_wrap">
+                    <div class="pay_htxt">
+                        <p>결제수단</p>
+                    </div>
+                    <label class="custom_checkbox">
+                        <input type="checkbox" name="agree" value="1">
+                        <span>카카오페이</span>
+                    </label>
+                </div>
+                <hr class="line">
+                <div class="pay_price">
+                    <p>결제금액</p>
+                </div>
+                <div class="pay_price_wrap">
+                    <div class="m_price">
+                        <p>상품금액</p>
+                        <span>3,000 원</span>
+                    </div>
+                    <div class="m_de">
+                        <p>배송비</p>
+                        <span>5,000 원</span>
+                    </div>
+                    <hr class="line">
+                    <div class="m_num">
+                        <p>총 결제금액</p>
+                        <span>8,000 원</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+    <section class="last_price k_last">
+        <div class="inner">
+            <div class="final_wrap">
+                <hr class="line">
+                <button class="final_price" type="submit" form="payment">
+                    8,000 원 결제하기
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

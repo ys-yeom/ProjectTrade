@@ -1,0 +1,245 @@
+/* 검색어 */
+
+.sub_container {
+  padding-bottom: 100px;
+}
+.sub_container .sub_search .inner {
+  max-width: 1740px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+.sub_container .search_wrap {
+  padding: 56px 40px 0;
+  margin-bottom: 80px;
+}
+.sub_container .search {
+  display: flex;
+  justify-content: center;
+  gap: 0 10px;
+}
+.sub_container .search .select_wrap {
+  width: 18.2%;
+}
+.sub_container .search .input_wrap {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  border: 2px solid #376ec1;
+  align-items: center;
+}
+.sub_container .search input[type=search] {
+  width: calc(100% - 50px);
+  height: 46px;
+  border: none;
+  font-size: 18px;
+}
+.sub_container .search .search_btn {
+  width: 46px;
+  height: 46px;
+  border: none;
+  background:#fff url(../images/search.png) no-repeat 0 0 / 100%;
+}
+
+
+.sub_container .main_wrap .inner {
+  max-width: 1740px;
+  padding: 0 100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0 80px;
+}
+
+/* 왼쪽탭 */
+.sub_container .left_wrap {
+  width: 900px;
+}
+.sub_container .filter {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.sub_container .filter h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.sub_container .filter .checkbox {
+  padding-top: 8px;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.sub_container .category {
+  padding-top: 15px;
+}
+.sub_container .category h3 {
+  font-size:15px;
+  font-weight:bold;
+  color:#1f1f1f;
+}
+
+.sub_container .category ul {
+  padding-top: 8px;
+}
+.sub_container .category li {
+  padding: 3px 0;
+}
+.sub_container .category a {
+  font-size: 13px;
+}
+.sub_container .category a:hover {
+  color: #376ec1;
+  font-weight: bold;
+}
+
+
+/* 상품 페이지 */
+.sub_container .all_trade {
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+.sub_container .all_trade li {
+  width: calc((100% - 15px  * 4) / 5);
+  transition:box-shadow 0.2s;
+  position: relative;
+  border:1px solid #eeeeee;
+}
+.sub_container .all_trade .img_wrap {
+  aspect-ratio: 300 / 280;
+  overflow: hidden;
+  position: relative;
+}
+.sub_container .all_trade .img_wrap img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s cubic-bezier(.23,1,.32,1);
+}
+.sub_container .all_trade li:hover img {
+  transform: scale(1.1);
+}
+.sub_container .all_trade .img_wrap::after {
+  content: '';
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.5s;
+}
+.sub_container .all_trade li:hover .img_wrap::after {
+  opacity: 0;
+}
+
+.sub_container .all_trade .txt_wrap {
+  background: #fff;
+  height: 80px;
+  padding:15px 15px 0;
+}
+.sub_container .all_trade .txt_wrap strong {
+  display: block;
+  color:#212121;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sub_container .all_trade .txt_wrap span {
+  font-size: 14px;
+  font-weight:bold;
+}
+
+
+/* 태블릿 */
+@media (max-width:1200px) {
+  .sub_container .main_wrap .inner {
+    gap: 0 50px;
+  }
+
+  .sub_container .search input[type=search] {
+    font-size: 16px;
+  }
+
+  .checkbox::before {
+    width: 13px;
+    height: 13px;
+  }
+  .sub_container .filter h2 {
+    font-size: 14px;
+  }
+ .sub_container .filter .checkbox {
+    font-size: 12px;
+  }
+
+  .sub_container .category h3 {
+    font-size: 14px;
+  }
+  .sub_container .category a {
+    font-size: 12px;
+  }
+
+  .sub_container .all_trade {
+    gap: 12px;
+  }
+  .sub_container .all_trade li {
+    width: calc((100% - 12px * 2) / 3);
+  }
+
+  .sub_container .all_trade .txt_wrap strong {
+    font-size: 13px;
+  }
+  .sub_container .all_trade .txt_wrap span {
+    font-size: 13px;
+  }
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+  .sub_container .main_wrap .inner {
+    gap: 0 30px;
+  }
+
+  .sub_container .search_wrap {
+    padding: 40px 40px 0;
+    margin-bottom: 60px;
+  }
+
+  .sub_container .search input[type=search] {
+    font-size: 14px;
+  }
+
+  .sub_container .filter h2 {
+    font-size: 12px;
+  }
+  .checkbox::before {
+    width: 11px;
+    height: 11px;
+  }
+
+  .sub_container .filter .checkbox {
+    font-size: 11px;
+  }
+
+  .sub_container .category h3 {
+    font-size: 12px;
+  }
+  .sub_container .category a {
+    font-size: 11px;
+  }
+
+  .sub_container .all_trade {
+    gap: 10px;
+  }
+  .sub_container .all_trade li {
+    width: calc((100% - 10px * 2) / 2);
+  }
+
+  .sub_container .all_trade .txt_wrap strong {
+    font-size: 12px;
+  }
+  .sub_container .all_trade .txt_wrap span {
+    font-size: 12px;
+  }
+}

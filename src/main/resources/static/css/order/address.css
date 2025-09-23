@@ -1,0 +1,121 @@
+.address_p .inner {
+  margin: 0 auto;
+  padding: 0 170px 0;
+  max-width: 1200px;
+}
+.a_back_wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  z-index: 3;
+  margin-top: 20px;
+}
+.a_back_wrap .a_back_btn {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 40px;
+  top: 1px;
+  background: url(/images/common/angle-left.png) no-repeat 100% / 100%;
+}
+.a_back_wrap .a_add {
+  margin-left: 30px;
+  line-height: 30%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.address_main .inner {
+  margin: 0 auto;
+  padding: 0 170px 0;
+  max-width: 1200px;
+}
+.address_main .way_wrap {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  margin-left: 20px;
+}
+.address_main .way_wrap input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 12px 5px 8px;
+  font-size: 15px;
+  outline: none;
+  background: none;
+  margin-bottom: 30px;
+}
+.address_main .way_wrap label {
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  font-size: 16px;
+  color: #aaa;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+/* focus되거나 값이 있으면 label 위로 이동 */
+.address_main .way_wrap input:not(#address):focus + label,
+.address_main .way_wrap input:not(#address):not(:placeholder-shown) + label {
+  top: -8px;
+  font-size: 12px;
+  color: #000;
+}
+/* 포커스 시 밑줄 강조 */
+.address_main .way_wrap input:not(#address):focus {
+  border-bottom: 2px solid #000;
+}
+
+
+.address_main .way_wrap.on input {
+  display: block;
+  background: url(/images/common/close.svg) no-repeat 100%;
+}
+
+.address_main .way_wrap .delete_btn {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: none;
+  background: #376ec1 url(/images/common/close.svg) no-repeat 50% 50% / 12px;
+  display: none;
+}
+
+
+.address_main .done {
+  color: rgb(255, 255, 255);
+  background: rgba(248, 2, 14, 0.694);
+  border: none;
+  overflow: visible;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  padding: 15.5px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  margin: 200px 20px 20px 10px;
+}
+
+
+
+/* 태블릿 */
+@media (max-width:1200px) {
+  
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+  .address_p .inner {
+    padding: 0 130px 0;
+  }
+  .address_main .inner {
+    padding: 0 130px 0;
+  }
+}

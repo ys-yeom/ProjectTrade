@@ -1,0 +1,124 @@
+.address_p .inner {
+  margin: 0 auto;
+  padding: 0 170px 0;
+  max-width: 1200px;
+}
+.ab_wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.ab_wrap .a_back_wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  z-index: 3;
+  margin-top: 20px;
+}
+.a_back_wrap .a_back_btn {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 40px;
+  top: 1px;
+  background: url(/images/common/angle-left.png) no-repeat 100% / 100%;
+}
+.a_back_wrap .a_add {
+  margin-left: 30px;
+  line-height: 30%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.add_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 6%;
+  margin-top: 25px;
+}
+.add_wrap .add_a {
+  /* font-size: 15px; */
+  font-weight: 600;
+  text-decoration: underline;
+  color: #636060;
+}
+
+
+.ars_main .inner {
+  margin: 0 auto;
+  padding: 0 170px 0;
+  max-width: 1200px;
+}
+.ars_infor {
+  position: relative;
+  margin: 15px 0 30px 20px;
+  padding: 20px;
+  border: 1.5px solid #1b1b1b1b;
+  border-radius: 10px;
+}
+/* 주소등록 후 상세 */
+.ars_infor .ars_member .ars_name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.ars_infor .ars_member .ars_add {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.587);
+}
+.ars_infor .ars_member .ars_num {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.587);
+}
+.ars_infor .ars_bottom {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.ars_bottom .bottom_wrap {
+  display: flex;
+  gap: 10px;
+}
+.bottom_wrap .re_btn {
+  padding: 5px 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.587);
+  border-radius: 5px;
+  border: 1px solid #0000007a;
+}
+.bottom_wrap .delete_we {
+  padding: 5px 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.587);
+  border-radius: 5px;
+  border: 1px solid #0000007a;
+  cursor: pointer;
+}
+.ars_bottom .choice_wrap {
+  padding: 5px 15px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.587);
+  background: #63606052;
+}
+/* 태블릿 */
+@media (max-width:1200px) {
+  .add_wrap {
+    width: 10%;
+  }
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+  .address_p .inner {
+    padding: 0 130px 0;
+  }
+  .ars_main .inner {
+    padding: 0 130px 0;
+  }
+  .add_wrap {
+    width: 17%;
+  }
+}

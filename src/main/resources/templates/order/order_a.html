@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/order/order_a.css">
+    <script src="/js/order.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<main id="container" layout:fragment="content">
+    <section class="order_p">
+        <div class="inner">
+            <div class="back_wrap">
+                <a href="/trade/trade_sub.html" class="back_btn">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="deal">
+        <div class="inner">
+            <div class="d_wrap">
+                <div class="d_img_wrap">
+                    <img src="/images/trade/trade_images02.webp" alt="">
+                </div>
+                <div class="d_txt_wrap">
+                    <span>3,000원</span>
+                    <p>귀국 정리! 4단 슬림 수납 선반 <wbr>(틈새 공간 활용에 최고!)</p>
+                </div>
+            </div>
+            <hr class="line">
+        </div>
+    </section>
+    <section class="deal_p">
+        <div class="inner">
+            <div class="h_txt">
+                <h4>거래 방법 선택</h4>
+            </div>
+            <div class="sdeil_wrap">
+                <h3>택배로 받기</h3>
+                <p>5,000원</p>
+            </div>
+            <div class="deil_wrap">
+                <h3>직접 만나서 받기</h3>
+            </div>
+        </div>
+    </section>
+    <section class="deal_f">
+        <div class="inner">
+            <div class="p_wrap">
+                <div class="price_box">
+                    <p>예상금액</p>
+                    <span>3,000원</span>
+                </div>
+                <a href="/order/order_b.html" class="next_btn">
+                    다음
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,254 @@
+.login_container {
+  padding: 100px;
+}
+.login_container .inner {
+  max-width:500px;
+  margin: 0 auto;
+}
+
+.login_container .contents {
+  padding: 100px 0 100px;
+}
+
+
+/* 로그인 페이지 */
+.login_container .contents .login {
+  border:1px solid #c6c6c6;
+  border-radius: 6px;
+  padding:20px 24px;
+  box-shadow: 0 5px 8px 0 rgba(68,68,68,.04);
+}
+.login_container h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.login_container .input_wrap {
+  border:1px solid #dadada;
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+.login_container .input_wrap2 {
+  border-radius: 0 0 6px 6px;
+  margin-top:-1px;
+}
+.login_container .input_wrap input {
+  border:none;
+  width:100%;
+  height: 48px;
+  padding:0 20px;
+}
+.login_container .input_wrap.on input {
+  display: block;
+  background: url(/images/common/close.svg) no-repeat 100%;
+}
+/* .login_page .input_wrap.on .delete_btn {
+  visibility: visible;
+} */
+
+/* 입력필드에 포커스 갔을 때 부모의 스타일 변경 */
+.login_container .input_wrap:has(input:focus) {
+  border-color: #376ec1;
+  position: relative;
+  z-index: 10;
+}
+
+.login_container .input_wrap .delete_btn {
+  width:18px;
+  height: 18px;
+  position: absolute;
+  right:20px;
+  top:50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border:none;
+  background: #376ec1 url(/images/common/close.svg) no-repeat 50% 50% / 12px;
+  display: none;
+}
+
+.login_container .input_wrap3 {
+  margin-top:15px;
+}
+.login_container .input_wrap3 .checkbox {
+  font-size: 15px;
+}
+.login_container .login_btn {
+  width:100%;
+  height: 52px;
+  border-radius: 6px;
+  background: #376ec1;
+  color:#fff;
+  border: none;
+  margin-top:40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.login_container .find {
+  display: flex;
+  justify-content: center;
+  margin-top:20px;
+}
+.login_container .find li {
+  padding:0 15px;
+  position: relative;
+}
+.login_container .find li + li::before {
+  content: '';
+  position: absolute;
+  left:0;
+  top:4px;
+  width:1px;
+  height: 12px;
+  background: #dadada;
+}
+
+.login_container .s_login {
+  margin-top: 20px;
+}
+.login_container .s_login h3::before {
+  content: "";
+  display: block;
+  width: 35%;
+  border-bottom: 1px solid #c6c2c2;
+}
+.login_container .s_login h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #7d7d7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.login_container .s_login h3::after {
+  content: "";
+  display: block;
+  width: 35%;
+  border-bottom: 1px solid #c6c2c2;
+}
+.login_container .s_login .kakao_btn::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(/images/kakao-icon.png) no-repeat center / cover;
+}
+.login_container .s_login .kakao_btn {
+  border: none;
+  border-radius: 8px;
+  background-color: #fee500;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  gap: 5px;
+}
+
+
+/* 회원가입 페이지 */
+.login_container .join_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 15px;
+  position: relative;
+}
+.login_container .join_wrap label {
+  font-size: 16px;
+}
+.login_container .join_wrap input {
+  width:100%;
+  height: 48px;
+  padding:0 20px;
+  border: 1px solid #9d9d9d;
+}
+.login_container .join_wrap.on input {
+  display: block;
+  background: url(/images/common/close.svg) no-repeat 100%;
+}
+.login_container .join_wrap input:focus {
+  border: 1px solid #376ec1;
+}
+.login_container .join_wrap .delete_btn {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 76%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: none;
+  background: #376ec1 url(/images/common/close.svg) no-repeat 50% 50% / 12px;
+  display: none;
+}
+
+
+/* 태블릿 */
+@media (max-width:1200px) {
+  .login_container .contents .login {
+    padding: 26px 30px;
+  }
+  
+  .login_container .input_wrap3 {
+    margin-top:18px;
+  }
+  
+  .login_container .login_btn {
+    margin-top: 35px;
+  }
+}
+
+/* 모바일 */
+@media (max-width:767px) {
+  .login_container h2 {
+    font-size: 23px;
+  }
+
+  .login_container .input_wrap3 .checkbox {
+    font-size: 13px;
+  }
+  .checkbox::before {
+    width: 13px;
+    height: 13px;
+  }
+  .login_container .input_wrap3 {
+    margin-top:22px;
+  }
+  
+
+  .login_container .login_btn {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  
+  .login_container .find li + li::before {
+    top: 5px;
+    height: 11px;
+  }
+  .login_container .find a {
+    font-size: 12px;
+  }
+
+  .login_container .s_login h3 {
+    font-size: 12px;
+  }
+  .login_container .s_login .kakao_btn {
+    font-size: 12px;
+  }
+
+  .login_container .join_wrap label {
+    font-size: 14px;
+  }
+  .login_container .join_wrap input {
+    height: 42px;
+  }
+}
