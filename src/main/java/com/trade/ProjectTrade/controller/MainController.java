@@ -96,11 +96,6 @@ public class MainController {
     }
 
 
-    @GetMapping("/trade")
-    public String TradePage() {
-        return "/trade/trade";
-    }
-
     @GetMapping("/trade_sub")
     public String Trade_subPage() {
         return "/trade/trade_sub";

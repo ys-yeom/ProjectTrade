@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.trade.ProjectTrade.mapper.TradeMapper">
+    <!--    페이징-->
+    <sql id="page1">
+        WITH QDATA AS (
+    </sql>
+    <sql id="page2">
+        )
+        SELECT xx.*
+        FROM (
+        SELECT /*+ALL_ROWS*/ ROW_NUMBER() OVER(ORDER BY yy.product_id DESC) rn
+        , yy.*
+        FROM QDATA yy
+        ) xx
+        WHERE rn BETWEEN #{start} AND #{end}
+    </sql>
+
+    <select id="totalTrade" resultType="int">
+        select count(*) from trade
+    </select>
+
+    <select id="selectAll" resultType="TradeDTO">
+        <include refid="page1" />
+        SELECT * FROM TRADE
+        <include refid="page2" />
+    </select>
+
+</mapper>
