@@ -56,171 +56,182 @@
       </div>
       <div class="right_wrap">
         <ul class="all_trade">
-          <li>
-            <a href="/trade_sub">
+          <li th:each="trade : ${list}">
+            <a th:href="@{'/trade/trade_sub/' + ${trade.product_id}}">
               <div class="img_wrap">
                 <img src="/images/trade/trade_images01.webp" alt="이미지">
               </div>
               <div class="txt_wrap">
-                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>
-                <span>3,000원</span>
+                <strong th:text="${trade.name}"></strong>
+                <span  th:text="${trade.price}"></span>
               </div>
             </a>
           </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images02.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>아이폰 14 256GB 화이트 A급</strong>
-                <span>480,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images03.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>무아스 스팀 다리미기 새상품</strong>
-                <span>100,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images04.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>후지필름 X-T2 카메라</strong>
-                <span>1,100,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images05.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>BUNN GEN3 커피 브루어 서버(디스펜서, 워터저그 원가 825,000원)</strong>
-                <span>95,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images06.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>빈백 대형 팔아요!</strong>
-                <span>22,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images07.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>실사O) 에이블리 모디핏 하이웨스트 부츠컷 청바지 슬림핏 데님 팬츠</strong>
-                <span>10,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images08.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>폴로 랄프로렌 스트라이프 자켓</strong>
-                <span>250,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images09.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>메디힐 패드 팝니다</strong>
-                <span>11,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images10.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>(전문가용) 레삐 고데기</strong>
-                <span>119,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images11.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>급매)슈퍼커브110 블랙칼라</strong>
-                <span>2,100,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images12.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>판도라 3D 플러스 오락기 / 오락실 / 게임기</strong>
-                <span>430,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images13.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>What Plus 턴테이블</strong>
-                <span>140,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images14.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>안재찬 스토리텔링 수학 (초1-3학년 36권)</strong>
-                <span>90,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images15.webp" alt="이미지">
-              </div>
-              <div class="txt_wrap">
-                <strong>부동산 관련 서적 모음</strong>
-                <span>15,000원</span>
-              </div>
-            </a>
-          </li>
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images01.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>-->
+<!--                <span>3,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images02.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>아이폰 14 256GB 화이트 A급</strong>-->
+<!--                <span>480,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images03.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>무아스 스팀 다리미기 새상품</strong>-->
+<!--                <span>100,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images04.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>후지필름 X-T2 카메라</strong>-->
+<!--                <span>1,100,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images05.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>BUNN GEN3 커피 브루어 서버(디스펜서, 워터저그 원가 825,000원)</strong>-->
+<!--                <span>95,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images06.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>빈백 대형 팔아요!</strong>-->
+<!--                <span>22,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images07.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>실사O) 에이블리 모디핏 하이웨스트 부츠컷 청바지 슬림핏 데님 팬츠</strong>-->
+<!--                <span>10,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images08.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>폴로 랄프로렌 스트라이프 자켓</strong>-->
+<!--                <span>250,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images09.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>메디힐 패드 팝니다</strong>-->
+<!--                <span>11,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images10.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>(전문가용) 레삐 고데기</strong>-->
+<!--                <span>119,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images11.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>급매)슈퍼커브110 블랙칼라</strong>-->
+<!--                <span>2,100,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images12.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>판도라 3D 플러스 오락기 / 오락실 / 게임기</strong>-->
+<!--                <span>430,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images13.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>What Plus 턴테이블</strong>-->
+<!--                <span>140,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images14.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>안재찬 스토리텔링 수학 (초1-3학년 36권)</strong>-->
+<!--                <span>90,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images15.webp" alt="이미지">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>부동산 관련 서적 모음</strong>-->
+<!--                <span>15,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
         </ul>
       </div>
     </div>
