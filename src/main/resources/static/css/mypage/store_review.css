@@ -19,16 +19,41 @@
   position: relative;
   padding: 25px;
   border: 1px solid #00000045;
+  display: flex;
+ align-items: flex-start;
+  gap: 20px;
+}
+.sr_name_wrap .sn_imgwrap {
+  position: relative;
+   max-width: 200px;
+
+}
+.sr_name_wrap .sn_imgwrap img {
+    width: 100%;
+    border-radius: 10px;
+    flex: 0 0 100%;
+    min-width: 0;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+.sr_info {
+  display: flex;
+  flex-direction: column;  /* 위/아래 배치 */
+  justify-content: space-between; /* 상단-하단 공간 분배 */
 }
 .sname_wrap {
   position: relative;
   display: flex;
+   align-items: center; /* 상점명 + 버튼 세로 가운데 */
   gap: 10px;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 .sname_wrap .sname {
   font-size: 22px;
   font-weight: 500;
+  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .sname_wrap .rename_btn {
   position: relative;
@@ -43,14 +68,15 @@
     border-radius: 5px;
 }
 .sales_history {
-  position: relative;
+  /* position: relative; */
   display: inline-flex;
   padding: 10px;
-  text-align: end;
-  justify-content: flex-end;
+  text-align: center;
+  justify-content:center;
   font-size: 16px;
   font-weight: 500;
   border: 1px solid #00000045;
+  margin-top: 116px;
 }
 .snameInput {
   border: 1px solid #0000003d;
