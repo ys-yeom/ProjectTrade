@@ -13,17 +13,6 @@ public class MainController {
     }
 
 
-    @GetMapping("/login")
-    public String LoginPage() {
-        return "login/login";
-    }
-
-
-
-    @GetMapping("/memberjoin")
-    public String MemberjoinPage() {
-        return "/login/memberjoin";
-    }
 
     @GetMapping("/enroll")
     public String EnrollPage() {
@@ -93,12 +82,6 @@ public class MainController {
     @GetMapping("/review")
     public String ReviewPage() {
         return "/order/review";
-    }
-
-
-    @GetMapping("/trade_sub")
-    public String Trade_subPage() {
-        return "/trade/trade_sub";
     }
 
 
