@@ -10,5 +10,7 @@ import java.util.List;
 public interface TradeMapper {
     List<TradeDTO> selectAll(Pagination pg);
     int totalTrade(Pagination pg);
+
+    TradeDTO selectById(int product_id);;
 //    int insertCook(TradeDTO TradeDTO);
 }

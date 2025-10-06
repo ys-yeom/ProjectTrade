@@ -121,7 +121,7 @@
   padding-bottom: 10px;
   column-gap: 7px;
 }
-.trsub_store .delivery span {
+.trsub_store .delivery .d_span {
   color: rgb(153, 153, 153);
   font-size: 16px;
 }
@@ -131,7 +131,12 @@
 }
 .trsub_store .delivery p {
   padding-left: 10px;
-   font-size: 16px;
+  margin-top: 2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.trsub_store .delivery span {
+  font-size: 16px;
   font-weight: 500;
 }
 .trsub_store .fee_wrap .pay {
@@ -409,7 +414,7 @@
   .trsub_store .state p {
     font-size: 14px;
   }
-  .trsub_store .delivery span {
+  .trsub_store .delivery .d_span {
     font-size: 14px;
   }
   .trsub_store .delivery h3 {

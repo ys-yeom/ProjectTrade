@@ -51,7 +51,7 @@
 
 /* 왼쪽탭 */
 .sub_container .left_wrap {
-  width: 900px;
+  max-width: 700px;
 }
 .sub_container .filter {
   padding-bottom: 15px;
@@ -93,6 +93,10 @@
 
 
 /* 상품 페이지 */
+.sub_container .right_wrap {
+    width: 1040px;
+    max-width: 1040px;
+}
 .sub_container .all_trade {
   display: flex;
   flex-wrap: wrap;

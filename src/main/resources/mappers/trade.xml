@@ -23,8 +23,35 @@
 
     <select id="selectAll" resultType="TradeDTO">
         <include refid="page1" />
-        SELECT * FROM TRADE
+        SELECT product_id, member_id, name, FORMAT(price, 0) AS price, category_id, image, create_date, modify_date
+        FROM trade
         <include refid="page2" />
+    </select>
+
+    <select id="selectById" resultType="TradeDTO">
+        SELECT
+        t.product_id,
+        t.member_id,
+        m.member_name AS member_name,
+        t.name,
+        FORMAT(t.price, 0) AS price,
+        t.status,
+        FORMAT(t.shipping_fee, 0) AS shipping_fee,
+        CASE t.trade_type
+        WHEN 'PERSON' THEN '직거래'
+        WHEN 'PARCEL' THEN '택배'
+        END AS tradeTypeName,
+        t.trade_location,
+        t.category_id,
+        c.category_name AS category_name,
+        t.description,
+        t.image,
+        t.create_date,
+        t.modify_date
+        FROM trade t
+        LEFT JOIN member m ON t.member_id = m.member_id
+        LEFT JOIN category c ON t.category_id = c.category_id
+        WHERE t.product_id = #{product_id};
     </select>
 
 </mapper>
