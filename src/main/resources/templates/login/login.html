@@ -7,6 +7,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/css/login.css">
+  <script src="/js/member.js"></script>
   <title>Title</title>
 </head>
 <body>
@@ -15,17 +16,17 @@
     <div class="inner">
       <div class="login">
         <h2>로그인</h2>
-        <form>
+        <form class="login_form" id="requored-form" onsubmit="return emailLogin(event)">
           <fieldset>
             <legend>로그인</legend>
             <div class="input_wrap">
-              <input type="text" placeholder="아이디" title="아이디" maxlength="41">
+              <input type="email" id="email" name="username" placeholder="아이디" title="아이디" maxlength="41">
               <button type="button" class="delete_btn">
                 <span class="blind">삭제</span>
               </button>
             </div>
             <div class="input_wrap input_wrap2">
-              <input type="password" placeholder="비밀번호" title="비밀번호" maxlength="16">
+              <input type="password" id="password" name="password" placeholder="비밀번호" title="비밀번호" maxlength="16">
               <button type="button" class="delete_btn">
                 <span class="blind">삭제</span>
               </button>
@@ -36,7 +37,7 @@
                 로그인 상태 유지
               </label>
             </div>
-            <button type="submit" class="login_btn">로그인</button>
+            <button id="formSubmitBtn" type="submit" class="login_btn">로그인</button>
           </fieldset>
         </form>
       </div>

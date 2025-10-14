@@ -9,7 +9,16 @@
     <div class="inner">
         <div class="header_top">
             <ul class="menu">
-                <li><a href="/login">로그인</a></li>
+                <li>
+                    <div th:if="${session.get('user') != null}" id="header-logged-in">
+                        <a href="/member/logout">로그아웃</a>
+                    </div>
+                </li>
+                <li>
+                    <div th:if="${session.get('user') == null}" id="header-logged-out">
+                        <a href="/login">로그인</a>
+                    </div>
+                </li>
                 <li><a href="/memberjoin">회원가입</a></li>
             </ul>
         </div>

@@ -9,5 +9,7 @@ import java.util.List;
 public interface MemberMapper {
     List<MemberDTO> selectAll();
 
+    MemberDTO checkLogin(String email, String password);
+
 
 }

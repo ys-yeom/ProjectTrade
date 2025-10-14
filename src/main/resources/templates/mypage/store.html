@@ -73,8 +73,8 @@
       </div>
       <div class="storeAll_wrap">
         <ul class="all_store">
-          <li>
-            <a href="/trade_sub" class="store_link">
+          <li th:each="trade : ${list}">
+            <a th:href="@{'/trade/trade_sub/' + ${trade.product_id}}" class="store_link">
               <div class="img_wrap">
                 <img src="/images/trade/trade_images04.webp" alt="">
               </div>
@@ -84,61 +84,61 @@
               </div>
             </a>
           </li>
-          <li>
-            <a href="/trade_sub" class="store_link">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images05.webp" alt="">
-              </div>
-              <div class="txt_wrap">
-                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>
-                <span>3,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub" class="store_link">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images05.webp" alt="">
-              </div>
-              <div class="txt_wrap">
-                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>
-                <span>3,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub" class="store_link">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images05.webp" alt="">
-              </div>
-              <div class="txt_wrap">
-                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>
-                <span>3,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub" class="store_link">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images05.webp" alt="">
-              </div>
-              <div class="txt_wrap">
-                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>
-                <span>3,000원</span>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/trade_sub" class="store_link">
-              <div class="img_wrap">
-                <img src="/images/trade/trade_images05.webp" alt="">
-              </div>
-              <div class="txt_wrap">
-                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>
-                <span>3,000원</span>
-              </div>
-            </a>
-          </li>
+<!--          <li>-->
+<!--            <a href="/trade_sub" class="store_link">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images05.webp" alt="">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>-->
+<!--                <span>3,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub" class="store_link">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images05.webp" alt="">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>-->
+<!--                <span>3,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub" class="store_link">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images05.webp" alt="">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>-->
+<!--                <span>3,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub" class="store_link">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images05.webp" alt="">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>-->
+<!--                <span>3,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
+<!--          <li>-->
+<!--            <a href="/trade_sub" class="store_link">-->
+<!--              <div class="img_wrap">-->
+<!--                <img src="/images/trade/trade_images05.webp" alt="">-->
+<!--              </div>-->
+<!--              <div class="txt_wrap">-->
+<!--                <strong>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</strong>-->
+<!--                <span>3,000원</span>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </li>-->
         </ul>
       </div>
     </div>
