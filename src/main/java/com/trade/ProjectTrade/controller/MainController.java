@@ -14,10 +14,7 @@ public class MainController {
 
 
 
-    @GetMapping("/enroll")
-    public String EnrollPage() {
-        return "/menu/enroll";
-    }
+
 
     @GetMapping("/talk")
     public String TalkPage() {

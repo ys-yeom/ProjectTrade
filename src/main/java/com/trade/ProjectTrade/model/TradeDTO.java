@@ -22,6 +22,10 @@ public class TradeDTO {
     private int category_id;
     private String description;
     private String image;
+    private String tags;
+    private int quantity;
     private java.sql.Date create_date;
     private Date modify_date;
 }
+
+

@@ -20,4 +20,8 @@ public class MemberService {
         return memberMapper.checkLogin(email, password);
     }
 
+    public void insertMember(MemberDTO memberDTO) {
+        memberMapper.insertMember(memberDTO);
+    }
+
 }

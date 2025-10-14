@@ -10,4 +10,8 @@
         SELECT MEMBER_ID, MEMBER_NAME, EMAIL FROM MEMBER WHERE EMAIL = #{email, jdbcType=VARCHAR} AND PASSWORD = #{password, jdbcType=VARCHAR}
     </select>
 
+    <insert id="insertMember">
+        INSERT INTO MEMBER (password, member_name, email, mobile, address) VALUES (#{password}, #{member_name}, #{email}, #{mobile}, #{address})
+    </insert>
+
 </mapper>

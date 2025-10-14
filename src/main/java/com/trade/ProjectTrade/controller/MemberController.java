@@ -68,6 +68,28 @@ public class MemberController {
     }
 
 
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        session.invalidate(); // 세션 무효화
+        return "main"; // 로그아웃 후 메인 페이지로 리다이렉트
+    }
+
+    @PostMapping("/joinDetail")
+    public String joinComplete(@ModelAttribute MemberDTO memberDto, Model model) {
+
+        System.out.println("MemberController: joinComplete" + memberDto);
+
+        memberService.insertMember(memberDto);
+
+        model.addAttribute("email", memberDto.getEmail());
+        model.addAttribute("password", memberDto.getPassword());
+        model.addAttribute("name", memberDto.getMember_name());
+        model.addAttribute("mobile", memberDto.getMobile());
+        model.addAttribute("address", memberDto.getAddress());
+        System.out.println("member/joinComplete---------------------------------------------");
+        return "/login/login";
+    }
+
 
 
 }
