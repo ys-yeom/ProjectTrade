@@ -15,7 +15,7 @@ public class TradeDTO {
     private int member_id;
     private String name;
     private String price;
-    private String status;
+    private String statusName;
     private String shipping_fee;
     private String tradeTypeName;
     private String trade_location;
