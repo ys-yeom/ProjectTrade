@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   /*상점명 수정*/
-  const wrap = document.querySelector(".sname_wrap");
+ const wrap = document.querySelector(".sname_wrap");
   const defaultName = "상점25호";
 
   // localStorage에서 불러오기
@@ -15,15 +15,37 @@ window.addEventListener('DOMContentLoaded', () => {
     const input = wrap.querySelector(".snameInput");
     const saveBtn = wrap.querySelector(".saveBtn");
 
-    function save() {
-      const newValue = input.value;
-      localStorage.setItem("storeName", newValue); // 저장
-      wrap.innerHTML = `
-        <span class="sname">${newValue}</span>
-        <button class="rename_btn">상점명 수정</button>
-      `;
-      wrap.querySelector(".rename_btn").addEventListener("click", () => enableEdit(newValue));
-    }
+   function save() {
+     const newValue = input.value.trim();
+     if (!newValue) {
+       alert("이름을 입력해주세요.");
+       return;
+     }
+
+     // 화면 저장 (localStorage는 선택사항)
+     localStorage.setItem("storeName", newValue);
+
+     // 서버로 전송
+     fetch('/store/updateName', {
+       method: 'POST',
+       headers: { 'Content-Type': 'application/json' },
+       body: JSON.stringify({ name: newValue })
+     })
+     .then(response => response.json())
+     .then(data => {
+       if (data.success) {
+         // 성공 시 화면 반영
+         wrap.innerHTML = `
+           <span class="sname">${newValue}</span>
+           <button class="rename_btn">상점명 수정</button>
+         `;
+         wrap.querySelector(".rename_btn").addEventListener("click", () => enableEdit(newValue));
+       } else {
+         alert('수정 실패');
+       }
+     })
+     .catch(err => alert('에러: ' + err.message));
+   }
 
     saveBtn.addEventListener("click", save);
     input.addEventListener("keydown", e => e.key === "Enter" && save());
@@ -33,6 +55,40 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+/* function save() {
+  const newValue = input.value.trim();
+  if (!newValue) {
+    alert("이름을 입력해주세요.");
+    return;
+  }
+
+  // 화면 저장 (localStorage는 선택사항)
+  localStorage.setItem("storeName", newValue);
+
+  // 서버로 전송
+  fetch('/store/updateName', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: newValue })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      // 성공 시 화면 반영
+      wrap.innerHTML = `
+        <span class="sname">${newValue}</span>
+        <button class="rename_btn">상점명 수정</button>
+      `;
+      wrap.querySelector(".rename_btn").addEventListener("click", () => enableEdit(newValue));
+    } else {
+      alert('수정 실패');
+    }
+  })
+  .catch(err => alert('에러: ' + err.message));
+}
+*/
 
 // const countEl = document.querySelector('.re_count'); // 카운트 표시 span
 //         const items = document.querySelectorAll('.all_store li'); // 상품 li들

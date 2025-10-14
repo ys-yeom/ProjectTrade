@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.trade.ProjectTrade.mapper.MyPageMapper">
+
+
+    <select id="selectById" resultType="MyPageDTO">
+        SELECT
+        store_id,
+        member_id,
+        member_name,
+        image,
+        create_date,
+        modify_date
+        FROM STORE
+        WHERE STORE_ID = #{store_id}
+    </select>
+
+
+<!--    <update id="updateStoreName">-->
+<!--        UPDATE store-->
+<!--        SET member_name = #{newName}, modify_date = NOW()-->
+<!--        WHERE member_id = #{memberId}-->
+<!--    </update>-->
+
+
+</mapper>
