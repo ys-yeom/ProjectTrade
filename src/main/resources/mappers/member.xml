@@ -6,4 +6,8 @@
         select * from member
     </select>
 
+    <select id="checkLogin">
+        SELECT MEMBER_ID, MEMBER_NAME, EMAIL FROM MEMBER WHERE EMAIL = #{email, jdbcType=VARCHAR} AND PASSWORD = #{password, jdbcType=VARCHAR}
+    </select>
+
 </mapper>

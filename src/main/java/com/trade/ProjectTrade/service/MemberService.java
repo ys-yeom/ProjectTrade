@@ -16,5 +16,8 @@ public class MemberService {
         return memberMapper.selectAll();
     }
 
+    public MemberDTO checkLogin(String email, String password) {
+        return memberMapper.checkLogin(email, password);
+    }
 
 }
