@@ -22,8 +22,8 @@ public class TradeService {
         return tradeMapper.selectById(product_id);
     }
 
-//    public int insertCook(CookDTO cookDTO) {
-//        return cookMapper.insertCook(cookDTO);
-//    }
+    public int insertTrade(TradeDTO tradeDTO) {
+        return tradeMapper.insertTrade(tradeDTO);
+    }
 
 }

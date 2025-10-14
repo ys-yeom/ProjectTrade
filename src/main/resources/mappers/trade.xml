@@ -59,4 +59,8 @@
         WHERE t.product_id = #{product_id};
     </select>
 
+    <insert id="insertTrade">
+        INSERT INTO trade (member_id, image, name, category_id, status, description, tags, price, shipping_fee, trade_type, quantity) VALUES
+        (member_id_SEQ.NEXTVAL,#{image}, #{name}, #{category_id}, #{status}, #{description}, #{tags}, #{price}, #{shipping_fee}, #{trade_type}, #{quantity})
+    </insert>
 </mapper>

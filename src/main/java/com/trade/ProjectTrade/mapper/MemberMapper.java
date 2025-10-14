@@ -11,5 +11,6 @@ public interface MemberMapper {
 
     MemberDTO checkLogin(String email, String password);
 
+    void insertMember(MemberDTO memberDTO);
 
 }

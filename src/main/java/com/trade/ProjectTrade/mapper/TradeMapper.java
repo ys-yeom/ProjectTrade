@@ -12,5 +12,5 @@ public interface TradeMapper {
     int totalTrade(Pagination pg);
 
     TradeDTO selectById(int product_id);;
-//    int insertCook(TradeDTO TradeDTO);
+    int insertTrade(TradeDTO TradeDTO);
 }
