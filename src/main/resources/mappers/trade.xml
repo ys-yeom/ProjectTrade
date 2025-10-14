@@ -35,7 +35,12 @@
         m.member_name AS member_name,
         t.name,
         FORMAT(t.price, 0) AS price,
-        t.status,
+        CASE t.status
+        WHEN 'NEW' THEN '새 상품'
+        WHEN 'NONE' THEN '사용감 없음'
+        WHEN 'LOW' THEN '사용감 적음'
+        WHEN 'HIGH' THEN '사용감 많음'
+        END AS statusName,
         FORMAT(t.shipping_fee, 0) AS shipping_fee,
         CASE t.trade_type
         WHEN 'PERSON' THEN '직거래'
