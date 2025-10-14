@@ -17,8 +17,8 @@
       <nav class="gorie_wrap">
         <ol class="gorie">
           <li><a href="/">홈</a></li>
-          <li><a href="/trade">중고거래</a></li>
-          <li><span>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</span></li>
+          <li><a href="/trade/trade">중고거래</a></li>
+          <li><span th:text="${trade.name}"></span></li>
         </ol>
       </nav>
     </div>
@@ -27,7 +27,7 @@
     <div class="inner">
       <div class="store_wrap">
         <div class="img_wrap">
-          <img src="/images/trade/trade_images02.webp" alt="">
+          <img th:src="@{/images/trade/{img}(img=${trade.image})}" alt="">
         </div>
         <div class="name_wrap">
           <p>통모짜핫도그</p>
@@ -36,9 +36,9 @@
       <div class="msg_wrap">
         <div class="minner">
           <div class="txt_wrap">
-            <h3>귀국 정리! 4단 슬림 수납 선반 (틈새 공간 활용에 최고!)</h3>
+            <h3 th:text="${trade.name}"></h3>
             <div class="tk">
-              <p>3,000</p>
+              <p th:text="${trade.price}"></p>
               <span>원</span>
             </div>
           </div>
@@ -46,22 +46,23 @@
             <div class="state">
               <span>•</span>
               <h3>상품상태</h3>
-              <p>좋음</p>
+              <p th:text="${trade.status}"></p>
             </div>
             <div class="delivery">
-              <span>•</span>
+              <span class="d_span">•</span>
               <h3>배송비</h3>
-              <p>3,000원</p>
+              <p th:text="${trade.shipping_fee}"></p>
+              <span>원</span>
             </div>
             <div class="pay">
               <span>•</span>
-              <h3>직거래</h3>
-              <p>종로구</p>
+              <h3 th:text="${trade.tradeTypeName}"></h3>
+              <p th:text="${trade.trade_location}"></p>
             </div>
           </div>
           <div class="infor_wrap">
             <h3>상품정보</h3>
-            <p>이사 이슈로 판매합니다</p>
+            <p th:text="${trade.description}"></p>
           </div>
           <div class="pop_wrap">
             <div class="p_button">

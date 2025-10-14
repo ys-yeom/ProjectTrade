@@ -28,7 +28,7 @@
 /* 컬러 변수 */
 /* :root는 html을 의미 */
 :root {
-  --point-color1: #e0462e;
+  --point-color1: #376ec1;
   --point-color2: #ed1c24;
   --gray-400: #1b1b1b;
   --gray-500: #1f1f1f;
@@ -843,40 +843,39 @@ caption.nohead {
 
 
 /* 게시판 페이징 */
-.board_pagination_wrap {
+.pagination_wrap {
   text-align: center;
 }
-.board_pagination {
+.pagination {
   display: inline-flex;
   justify-content: center;
   margin-top: 40px;
-  padding: 7px 0;
-  border-radius: 25px;
-  box-shadow: 0px 2px 9.8px 0.2px rgba(0, 0, 0, 0.08);
+  padding: 7px;
+  gap: 5px;
 }
 
-.board_pagination [class*=paging] {
+.pagination [class*=paging] {
   height: 35px;
   width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.board_pagination [class*=paging]::after {
+.pagination [class*=paging]::after {
   content: '';
   width: 14px;
   height: 12px;
   background: url(../images/page_prev.png) no-repeat;
 }
-.board_pagination .prev_paging {
+.pagination .prev_paging {
   padding-top: 7px;
   margin-right: 6px;
 }
-.board_pagination .next_paging {
+.pagination .next_paging {
   transform: rotate(-180deg);
 }
 
-.board_pagination .num {
+.pagination .page_num {
   height: 32px;
   width: 32px;
   line-height: 32px;
@@ -885,7 +884,7 @@ caption.nohead {
   border-radius: 50%;
   color: #848484;
 }
-.board_pagination .num.active {
+.pagination .page_num.active {
   background: var(--point-color1);
   border-color: var(--point-color1);
   color: #fff;

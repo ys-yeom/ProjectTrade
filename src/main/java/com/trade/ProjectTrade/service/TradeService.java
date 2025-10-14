@@ -18,6 +18,10 @@ public class TradeService {
         return tradeMapper.selectAll(pg);
     }
 
+    public TradeDTO selectById(int product_id) {
+        return tradeMapper.selectById(product_id);
+    }
+
 //    public int insertCook(CookDTO cookDTO) {
 //        return cookMapper.insertCook(cookDTO);
 //    }
